@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
 
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 const routes: Routes =[
   {
@@ -11,17 +13,9 @@ const routes: Routes =[
     redirectTo: 'component-and-template',
     pathMatch: 'full',
   }, 
-  {
-    path: '',
-    component: AdminLayoutComponent,
-    children: 
-    [
-      {
-      path: '',
-      loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
-      }
-    ]
-  },
+  { path: 'component-and-template',      component: ComponentAndTemplateComponent },
+  { path: 'dashboard',      component: DashboardComponent },
+  { path: 'user-profile',   component: UserProfileComponent },
   {
     path: '**',
     redirectTo: 'dashboard'
