@@ -1,0 +1,48 @@
+<div class="panel-header panel-header-sm"></div>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+          <div class="container">
+            <div>
+              <p>
+                <b>Interpolation</b>
+              </p>
+              <p>
+                Value of interpolation binding is - {{interpolationValue}}
+              </p>
+            </div>
+            <div>
+              <p>
+                <b>One-way binding (unidirectional)</b>
+              </p>
+              <p>
+                Value of uni-directional binding is -<span [innerText] = "uniDirectional" ></span>
+              </p> 
+              <p>
+                  You can not edit uni-directional binding property. Try here - <input [ngModel]="uniDirectional"  />
+              </p>                              
+            </div>   
+            <div>
+              <p>
+                <b>Two-way binding</b>
+              </p>
+              <p>
+                  Value of two-directional binding is -<span [innerText] = "twoDirectional" ></span>
+              </p> 
+              <p>
+                You can even edit two-directional binding property here - <input [(ngModel)]="twoDirectional"  />
+              </p>               
+            </div>
+            <div>
+              <p>
+                <b>Event binding</b>
+              </p>
+              <button (click)="onClickMe()">Click me!</button>  
+              <br/><br/>  
+              <span> {{messageText}} </span>
+            </div>                      
+          </div>
+        </div>
+    </div>
+</div>

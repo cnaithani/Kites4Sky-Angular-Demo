@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
+import { BindingsComponent } from './bindings/bindings.component';
 
 
 
@@ -33,6 +34,7 @@ import { ComponentAndTemplateComponent } from './component-and-template/componen
     ComponentAndTemplateComponent,
     DashboardComponent,
     UserProfileComponent,
+    BindingsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
