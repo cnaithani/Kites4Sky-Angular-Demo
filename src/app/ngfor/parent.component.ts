@@ -10,5 +10,5 @@ title = 'Angular 6 - ngfor';
 users = [
     {name: "Ritu Kashyap", qualifications: ["B.Tech", "MCA", "B.A", "M.Tech"]},
     {name: "Pratyush Sharma", qualifications: ["BA", "MA", "BTC"]}
-  ];
+  ]; 
 }

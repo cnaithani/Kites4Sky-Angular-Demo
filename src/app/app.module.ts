@@ -38,7 +38,7 @@ import { ParentComponent } from './ngfor/parent.component';
     UserProfileComponent,
     BindingsComponent,
   ],
-  providers: [],
+  providers: [], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
