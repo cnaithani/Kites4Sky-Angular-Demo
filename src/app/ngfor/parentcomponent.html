@@ -1,0 +1,35 @@
+    <div class="panel-header panel-header-sm"></div>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+          <div class="container">
+            <div>
+
+            
+                <b>Angular 6 nested loops</b>
+<table *ngFor="let user of users">
+  <tr>
+    <td>{{user.name}}</td> <td>-</td>
+  </tr>
+  <tr *ngFor="let qualification of user.qualifications">
+      <td></td> <td> {{ qualification }} </td>
+  </tr>   
+</table>     
+
+
+  <b>Index and First/Last Value display</b>
+
+  <table *ngFor="let user of users; index as i;first as t">
+    <tr>
+      <td>Index<b> {{i}}</b> Is this first value of array <b>{{t}}</b>-{{user.name}}</td> <td>-</td>
+    </tr>
+    <tr *ngFor="let qualifica of user.qualifications;index as i;last as l">
+        <td></td> <td>Index count<b> {{i}}</b>-{{ qualifica }}- Is this Last value of array : <b>{{l}}</b> </td>
+    </tr>   
+  </table>
+     </div>            
+</div>          
+</div>        
+</div>      
+</div>

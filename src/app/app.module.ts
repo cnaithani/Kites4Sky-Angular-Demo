@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
 import { BindingsComponent } from './bindings/bindings.component';
+import { ParentComponent } from './ngfor/parent.component';
 
 
 
@@ -32,6 +33,7 @@ import { BindingsComponent } from './bindings/bindings.component';
   declarations: [
     AppComponent,
     ComponentAndTemplateComponent,
+    ParentComponent,
     DashboardComponent,
     UserProfileComponent,
     BindingsComponent,

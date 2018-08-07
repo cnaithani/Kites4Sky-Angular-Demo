@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
 import { BindingsComponent } from './bindings/bindings.component';
+import { ParentComponent } from './ngfor/parent.component';
 
 
 const routes: Routes =[
@@ -16,6 +17,7 @@ const routes: Routes =[
   }, 
   { path: 'component-and-template',      component: ComponentAndTemplateComponent },
   { path: 'bindings',      component: BindingsComponent },
+  { path: 'ngfor',      component: ParentComponent },
   { path: 'dashboard',      component: DashboardComponent },
   { path: 'user-profile',   component: UserProfileComponent },
   {
