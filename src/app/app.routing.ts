@@ -8,23 +8,33 @@ import { ComponentAndTemplateComponent } from './component-and-template/componen
 import { BindingsComponent } from './bindings/bindings.component';
 import { ParentComponent } from './ngfor/parent.component';
 
-
 const routes: Routes =[
-  {
-    path: '',
-    redirectTo: 'component-and-template',
-    pathMatch: 'full',
-  }, 
-  { path: 'component-and-template',      component: ComponentAndTemplateComponent },
-  { path: 'bindings',      component: BindingsComponent },
-  { path: 'ngfor',      component: ParentComponent },
-  { path: 'dashboard',      component: DashboardComponent },
-  { path: 'user-profile',   component: UserProfileComponent },
-  {
-    path: '**',
-    redirectTo: 'dashboard'
-  } 
-];
+  { path: '',   redirectTo: 'component-and-template', pathMatch: 'full' },  
+    { path: 'component-and-template',      component: ComponentAndTemplateComponent },
+    { path: 'bindings',      component: BindingsComponent },
+    { path: 'ngfor',      component: ParentComponent },
+    { path: 'dashboard',      component: DashboardComponent },
+    { path: 'user-profile',   component: UserProfileComponent },
+    {
+      path: '**',
+      redirectTo: 'dashboard'
+    } 
+  ];
+// const routes: Routes =[
+//                                                                                                                                                vcm,c                
+//   { path: '',
+//     redirectTo: './component-and-template',
+//     pathMatch: 'full' },  
+//   { path: 'component-and-template',      component: ComponentAndTemplateComponent },
+//   { path: 'bindings',      component: BindingsComponent },
+//   { path: 'ngfor',      component: ParentComponent },
+//   { path: 'dashboard',      component: DashboardComponent },
+//   { path: 'user-profile',   component: UserProfileComponent },
+//   {
+//     path: '**',
+//     redirectTo: 'dashboard'
+//   } 
+// ];
 
 @NgModule({
   imports: [
