@@ -7,12 +7,14 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
 import { BindingsComponent } from './bindings/bindings.component';
 import { ParentComponent } from './ngfor/parent.component';
+import { CustomerComponent } from './Observables/customer.component'
 
 const routes: Routes =[
   { path: '',   redirectTo: 'component-and-template', pathMatch: 'full' },  
     { path: 'component-and-template',      component: ComponentAndTemplateComponent },
     { path: 'bindings',      component: BindingsComponent },
     { path: 'ngfor',      component: ParentComponent },
+    { path: 'Observables',      component: CustomerComponent },
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     {

@@ -9,7 +9,8 @@ declare interface RouteInfo {
 export const ROUTES: RouteInfo[] = [
     { path: '/component-and-template', title: 'Component and Templates',  icon: '', class: '' },
     { path: '/bindings', title: 'Bindings',  icon:'', class: '' },
-    { path: '/ngfor', title: 'ngfor',  icon:'', class: '' }
+    { path: '/ngfor', title: 'ngfor',  icon:'', class: '' },
+    { path: '/Observables', title: 'Observable',  icon:'', class: '' }
 ];
 
 @Component({

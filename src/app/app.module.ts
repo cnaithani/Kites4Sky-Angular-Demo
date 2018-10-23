@@ -16,6 +16,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ComponentAndTemplateComponent } from './component-and-template/component-and-template.component';
 import { BindingsComponent } from './bindings/bindings.component';
 import { ParentComponent } from './ngfor/parent.component';
+
+import { CustomerComponent } from './Observables/customer.component';
 import {ChildModule} from './modules and routing/child.module'
 @NgModule({
   imports: [
@@ -33,6 +35,7 @@ import {ChildModule} from './modules and routing/child.module'
     AppComponent,
     ComponentAndTemplateComponent,
     ParentComponent,
+    CustomerComponent,
     DashboardComponent,
     UserProfileComponent,
     BindingsComponent,
